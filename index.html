@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <title>A pausa que te faz bem</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="imagens/logo_site-removebg-preview.png">
+</head>
+<body>
+
+  <!-- MENU LATERAL -->
+  <nav class="menu" aria-label="Navegação principal">
+    <div class="brand">
+      <img src="imagens/logo_politecnico_lisboa_horizontal_rgb.png" alt="IPL" class="logo-ipl">
+      <span class="divider"></span>
+      <img src="imagens/Direção-Geral_da_Saúde_Logo_(2024).png" alt="DGS" class="logo-dgs">
+   </div>
+    <a href="#inicio">Início</a>
+    <a href="#porque-sono">O sono</a>
+    <a href="#profissionais">Profissionais</a>
+    <a href="#questionario">Questionário</a>
+    <a href="#recursos">Recursos</a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="menuLinks">☰</button>
+    <div id="menuLinks" class="menu-links">
+      <!-- só em ecrãs pequenos -->
+      <a href="#inicio">Início</a>
+      <a href="#porque-sono">O sono</a>
+      <a href="#profissionais">Profissionais</a>
+      <a href="#questionario">Questionário</a>
+      <a href="#recursos">Recursos</a>
+    </div>
+  </nav>
+
+
+  <main class="content">
+
+    <!-- HERO (foto de capa + título) -->
+   <header id="inicio" class="hero" role="img" aria-label="Pessoa a dormir num ambiente calmo">
+  <h1>A pausa que te faz bem</h1>
+  <h2 class="hero-sub">Campanha do IPL em parceria com a DGS para promover o sono saudável</h2>
+  <a href="#questionario" class="cta-btn">Responder ao questionário</a>
+</header>
+
+    <!-- PORQUÊ O SONO -->
+ <section id="porque-sono" class="container">
+  <h2>Cuidar do sono é cuidar de ti</h2>
+
+  <div class="topico">
+    <h3>Foco e memória</h3>
+    <p>Enquanto dormes, o cérebro organiza o que aprendeste e apaga o que já não é necessário.
+    Uma boa noite de sono melhora a atenção e a capacidade de resolver problemas.</p>
+  </div>
+
+  <div class="topico">
+    <h3>Saúde física</h3>
+    <p>Durante o sono, o corpo regula hormonas e reforça o sistema imunitário. Dormir bem ajuda a manter o coração saudável e reduz o risco de doenças.</p>
+  </div>
+
+  <div class="topico">
+    <h3>Humor e stress</h3>
+    <p>O descanso influencia o equilíbrio emocional. Dormir pouco aumenta a irritabilidade; dormir bem melhora o humor e reduz o stress.</p>
+  </div>
+
+  <div class="topico">
+    <h3>Rotina consistente</h3>
+    <p>Deitar e acordar sempre a horas parecidas ajuda o relógio biológico e melhora a qualidade do sono.</p>
+  </div>
+</section>
+
+
+    <!-- PROFISSIONAIS -->
+
+<section id="profissionais" class="container testemunhos">
+  <h2>O que dizem os profissionais</h2>
+
+  <div class="cards">
+    <article>
+      <img src="imagens/Maria Emília Machado Marques Vitorino 40347 (6).jpg" alt="Médica de bata branca a sorrir">
+      <p><strong>Dra. Maria Vitorino</strong><br>
+      “Dormir é o melhor aliado da concentração. Recomendo desligar os ecrãs 30 minutos antes de dormir.”</p>
+    </article>
+
+    <article>
+      <img src="imagens/psico.jpg" alt="Psicólogo a conversar com um jovem">
+      <p><strong>Dr. Miguel Rocha</strong><br>
+      “O sono regular reduz a ansiedade e melhora o desempenho académico.”</p>
+    </article>
+
+     <article>
+      <img src="imagens/enfermeira.jpg" alt="Enfermeira a sorrir">
+      <p><strong>Dra. Inês Pereira</strong><br>
+      “Criar uma rotina de sono é cuidar da tua energia e da tua saúde mental.”</p>
+    </article>
+
+  </div>
+</section>
+
+
+    <!-- QUESTIONÁRIO -->
+    <section id="questionario" class="container form-wrap">
+      <h2 >Questionário do Sono</h2>
+      <form id="formSono" class="form">
+        <label for="q1">1) Como descreves a tua rotina de sono (horas de deitar/levantar)?</label>
+        <textarea id="q1" name="q1" rows="3" required></textarea>
+
+        <label for="q2">2) O que te ajuda a adormecer mais depressa?</label>
+        <textarea id="q2" name="q2" rows="3" required></textarea>
+
+        <label for="q3">3) O que costuma atrapalhar o teu sono (ecrãs, cafeína, stress)?</label>
+        <textarea id="q3" name="q3" rows="3" required></textarea>
+
+        <label for="q4">4) Uma mudança simples que vais experimentar esta semana:</label>
+        <textarea id="q4" name="q4" rows="3" required></textarea>
+
+        <label for="q5">5) Que apoio/recursos gostavas que o IPL disponibilizasse?</label>
+        <textarea id="q5" name="q5" rows="3" required></textarea>
+
+        <div class="form-actions">
+          <button type="submit" class="btn">Enviar</button>
+          <button type="reset" class="btn ghost">Limpar</button>
+        </div>
+        <p class="note">Nota: as respostas ficam apenas no teu navegador (não são enviadas para servidor).</p>
+      </form>
+      <output id="msg" class="msg" aria-live="polite"></output>
+    </section>
+
+    <!-- RECURSOS -->
+    <section id="recursos" class="container recursos">
+      <h2>Recursos e apoio</h2>
+      <ul>
+        <li><a href="#" aria-disabled="true">Serviços de saúde do IPL</a></li>
+        <li><a href="#" aria-disabled="true">Informação da DGS sobre sono</a></li>
+        <li><a href="mailto:saude@ipl.pt">saude@ipl.pt</a> • <a href="mailto:info@dgs.min-saude.pt">info@dgs.min-saude.pt</a></li>
+      </ul>
+    </section>
+
+    
+
+
+    <!-- FOOTER -->
+    <footer id="creditos">
+      <p>Projeto académico desenvolvido no âmbito da <strong>ODS 3 — Saúde e Bem-Estar</strong>, em parceria entre o IPL e a DGS.</p>
+      <p>Design e implementação: <span contenteditable="true">Gonçalo Martins</span> • © <span id="ano"></span></p>
+    </footer>
+
+  </main>
+
+
+</body>
+</html>
